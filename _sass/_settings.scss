@@ -1,0 +1,48 @@
+/* 
+    ===============================
+    SETTINGS
+    ===============================
+*/
+
+/* Colors */
+$brand-color-teal-dark: #0c6862;
+$brand-color-teal: #17cfc3;
+
+$brand-color-grey-dark: #454e5d;
+$brand-color-grey: #ebebeb;
+
+$text-color: #383F49;
+
+$border-color: #dfdcdd;
+
+/* Font size */
+$global-font-size:    16px !default;
+$global-line-height:  24px !default;
+
+/* Borders */
+$global-border-radius: 8px;
+
+/* Spacing */
+$global-spacing-unit: 30px !default;
+
+$global-spacing-unit-factor-xxsmall:  0.125 !default;
+$global-spacing-unit-factor-xsmall:   0.25  !default;
+$global-spacing-unit-factor-small:    0.5   !default;
+$global-spacing-unit-factor-large:    2     !default;
+$global-spacing-unit-factor-xlarge:   4     !default;
+$global-spacing-unit-factor-xxlarge:  6     !default;
+
+$global-spacing-unit-xxsmall:  round($global-spacing-unit * $global-spacing-unit-factor-xxsmall);
+$global-spacing-unit-xsmall:   round($global-spacing-unit * $global-spacing-unit-factor-xsmall);
+$global-spacing-unit-small:    round($global-spacing-unit * $global-spacing-unit-factor-small);
+$global-spacing-unit-large:    round($global-spacing-unit * $global-spacing-unit-factor-large);
+$global-spacing-unit-xlarge:   round($global-spacing-unit * $global-spacing-unit-factor-xlarge);
+$global-spacing-unit-xxlarge:  round($global-spacing-unit * $global-spacing-unit-factor-xxlarge);
+
+/* Breakpoints */
+$breakpoints: (
+  null: 0em,
+  '-s': 48.5em,
+  '-m': 62em,
+  '-l': 75em
+) !default;

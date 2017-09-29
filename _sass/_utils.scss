@@ -1,0 +1,185 @@
+/* 
+    ===============================
+    UTILS
+    ===============================
+*/
+
+/* Coloring */
+.teal {
+    color: $brand-color-teal !important;
+    a { color: $brand-color-teal; }
+}
+
+.bg-teal {
+    background-color: $brand-color-teal;
+    color: white;
+
+    * {
+        color: white;
+    }
+}
+
+.bg-white
+{
+    background-color: white;
+} 
+
+/* Lists */
+.bare 
+{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    > li:before
+    {
+        display: none;
+    }
+}
+
+/* Spacing */
+$spacing-directions: (
+  null,
+  '-top',
+  '-right',
+  '-bottom',
+  '-left',
+);
+
+$spacing-properties: (
+  'padding',
+  'margin'
+);
+
+$spacing-sizes: (
+  null: $global-spacing-unit,
+  '-xxsmall': $global-spacing-unit-xxsmall, 
+  '-xsmall': $global-spacing-unit-xsmall,
+  '-small': $global-spacing-unit-small,
+  '-large': $global-spacing-unit-large,
+  '-xlarge': $global-spacing-unit-xlarge,
+  '-xxlarge': $global-spacing-unit-xxlarge,
+) !default;
+
+@each $property in $spacing-properties {
+  @each $direction in $spacing-directions {
+    @each $size, $value in $spacing-sizes {
+      .#{$property}#{$direction}#{$size} {
+        #{$property}#{$direction}: $value !important;
+      }
+    }
+    .#{$property}#{$direction}-none {
+      #{$property}#{$direction}: 0 !important;
+    }
+  }
+}
+
+.full-width
+{
+    min-width: 100%;
+}
+
+.full-height
+{
+    min-height: 100%;
+}
+
+.trim > *:last-child
+{
+    margin-bottom: 0;
+
+    & > *:last-child
+    {
+        margin-bottom: 0;
+
+        & > *:last-child
+        {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+.hidden-on-mobile
+{
+    @media screen and (max-width: 48.5em){
+        display: none;
+    }
+}
+
+.visible-on-mobile
+{
+    @media screen and (min-width: 48.5em){
+        display: none;
+    }
+}
+
+.noselect 
+{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+img.fill
+{
+    width: 100%;
+}
+
+.rounded
+{
+    @include border-radius($global-border-radius);
+}
+
+.border
+{
+    border: solid 1px $border-color;
+}
+
+@media screen and (max-width: 48.5em)
+{
+    .text-center-mobile
+    {
+        text-align: center;
+
+        ul > li
+        {
+            display: inline-block;
+        }
+    }
+
+    .text-pull-mobile
+    {
+        text-align: left;
+    }
+
+    .text-push-mobile
+    {
+        text-align: left;
+    }
+}
+
+/* Ratio */
+.ratio
+{
+    min-width: 100%;
+    position: relative; /* If you want text inside of it */
+}
+
+.ratio--1x1 { @extend .ratio; padding-top: 100%; /* 1:1 Aspect Ratio */ }
+.ratio--16x9 { @extend .ratio; padding-top: 56.25%; /* 16:9 Aspect Ratio */ }
+.ratio--4x3 { @extend .ratio; padding-top: 75%; /* 4:3 Aspect Ratio */ }
+.ratio--3x2 { @extend .ratio; padding-top: 66.66%; /* 3:2 Aspect Ratio */ }
+.ratio--8x5 { @extend .ratio; padding-top: 62.5%; /* 8:5 Aspect Ratio */ }
+
+.ratio__content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

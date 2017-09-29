@@ -1,0 +1,114 @@
+/* 
+    ===============================
+    TYPOGRAPHY
+    ===============================
+*/
+
+html 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: ($global-font-size / 16px) * 1em;
+    line-height: $global-line-height / $global-font-size;
+    letter-spacing: 1px;
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,p
+{
+    margin: 0 0 $global-spacing-unit-small;    
+
+    @media screen and (min-width: 48.5em){
+        margin: 0 0 $global-spacing-unit; 
+    }
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6
+{
+    color: $text-color;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1,.h1,
+h2,.h2
+{
+    @include font-size(35px, 35px);
+}
+
+h3,.h3
+{
+    @include font-size(20px, 26px);
+}
+
+h4,.h4,
+h5,.h5
+{
+    @include font-size(16px, 26px);
+}
+
+@media screen and (min-width: 48.5em)
+{
+    h1,.h1
+    h2,.h2
+    {
+        @include font-size(48px, 48px);
+    }
+
+    h3,.h3
+    {
+        @include font-size(25px, 30px);
+    }
+
+    h4,.h4
+    {
+        @include font-size(20px, 26px);
+    }
+
+    h5,.h5
+    {
+        @include font-size(16px, 22px);
+    }
+}
+
+p,li 
+{
+    @include font-size($global-font-size);
+    color: $text-color;
+}
+
+a {
+    color: $brand-color-teal;
+    text-decoration: none;
+
+    @include transition(color .25s ease);
+
+    @include hocus {
+        color: darken($brand-color-teal, 10%);
+    }
+}
+
+ul,
+ol
+{
+    margin: 0 0 $global-spacing-unit;
+
+    & > li:before
+    {
+        color: $brand-color-teal;
+    }
+}
+
+hr
+{
+    border: 0;
+    height: 1px;
+    background: $border-color;
+    margin-top: $global-spacing-unit;
+    margin-bottom: $global-spacing-unit;
+
+    &.hr--large {
+        @media screen and (min-width:48.5em){
+            margin-top: $global-spacing-unit-large;
+            margin-bottom: $global-spacing-unit-large;
+        }
+    }
+}

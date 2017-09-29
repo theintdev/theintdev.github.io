@@ -1,0 +1,108 @@
+/* 
+    ===============================
+    TOOLS
+    ===============================
+*/
+
+/* Functions */
+@function as-rem($number) {
+  @return $number / $global-font-size * 1rem;
+}
+
+/* Mixins */
+@mixin font-size($font-size, $line-height: auto) {
+
+  font-size: $font-size;
+  font-size: as-rem($font-size);
+
+  @if ($line-height == 'auto') {
+    line-height: ceil($font-size / $global-line-height) * ($global-line-height / $font-size);
+  }
+
+  @else {
+
+    @if (type-of($line-height) == number or $line-height == 'inherit' or $line-height == 'normal') {
+      line-height: $line-height;
+    }
+
+  }
+
+}
+
+@mixin clearfix($important: false) {
+
+  // Determine whether or not to make declarations important.
+  @if ($important == false) {
+    $important: null;
+  } @else {
+    $important: !important;
+  }
+
+  &:after {
+    content: "" $important;
+    display: block $important;
+    clear: both $important;
+  }
+
+}
+
+@mixin border-radius($args...) {
+    border-radius: $args; 
+    -moz-border-radius: $args; 
+    -webkit-border-radius: $args; 
+}
+
+@mixin border-bottom-left-radius($args...) {
+    border-bottom-left-radius: $args; 
+    -moz-border-bottom-left-radius: $args; 
+    -webkit-border-bottom-left-radius: $args; 
+}
+
+@mixin border-bottom-right-radius($args...) {
+    border-bottom-right-radius: $args; 
+    -moz-border-bottom-right-radius: $args; 
+    -webkit-border-bottom-right-radius: $args; 
+}
+
+@mixin border-top-left-radius($args...) {
+    border-top-left-radius: $args; 
+    -moz-border-top-left-radius: $args; 
+    -webkit-border-top-left-radius: $args; 
+}
+
+@mixin border-top-right-radius($args...) {
+    border-top-right-radius: $args; 
+    -moz-border-top-right-radius: $args; 
+    -webkit-border-top-right-radius: $args; 
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform-origin($args...) {
+  -webkit-transform-origin: $args;
+  -moz-transform-origin: $args;
+  -ms-transform-origin: $args;
+  -o-transform-origin: $args;
+  transform-origin: $args;
+}
+
+@mixin transform($args...) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+@mixin hocus() {
+  &:hover,
+  &:focus {
+    @content;
+  }
+}

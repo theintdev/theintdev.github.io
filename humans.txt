@@ -1,0 +1,11 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Matt Brailsford -- Designer / Developer -- @mattbrailsford
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, YepNope, Enquire, Prism, Vuejs

@@ -1,0 +1,91 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+    
+        {% if page.title %}
+        <title>{{ page.title }} | {{ site.name }}</title>
+        {% else %}
+        <title>{{ site.name }} – {{ site.description }}</title>
+        {% endif %}
+        
+        {% include meta.html %}
+
+        <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
+        <link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
+
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+        
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/prism/prism-xonokai.css" />
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/materialdesignicons/materialdesignicons.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/lightbox/lightbox.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/vendor/justifiedgallery/justifiedgallery.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css" />
+
+        <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{ site.baseurl }}/js/vendor/jquery/jquery-2.1.4.min.js"><\/script>')</script>
+
+        <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/ext/modernizr.min.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/ext/matchmedia.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/ext/svg4everybody.min.js"></script>
+        <script type="text/javascript">
+            svg4everybody();
+        </script>
+
+    </head>
+    <body>
+        
+        <header class="header">
+            <a href="{{ site.baseurl }}/" class="header__logo">
+                <img src="{{ site.baseurl }}/img/cb_sml.png" />
+                <span class="header__logo-text">Circuitbeard</span>
+            </a>
+            <a href="#" class="nav__toggle">
+                <i class="mdi mdi-menu nav__toggle-icon--open"></i>
+                <i class="mdi mdi-close nav__toggle-icon--close"></i>
+            </a>
+        </header>
+        
+        <aside class="sidebar">
+            <a href="{{ site.baseurl }}/" class="sidebar__logo">
+                {% include logo.html %}
+                <span class="sidebar__logo-text">Circuitbeard</span>
+            </a>
+            <nav class="sidebar__nav">
+                {% include main-nav.html %}
+            </nav>
+            <div class="sidebar__bottom">
+                <ul class="social-links">
+                    <li class="social-links__item"><a href="http://twitter.com/circuitbeard" target="_blank" class="social-links__link"><i class="mdi mdi-twitter"></i></a></li>
+                    <li class="social-links__item"><a href="https://www.facebook.com/circuitbeard" class="social-links__link"><i class="mdi mdi-facebook"></i></a></li>
+                    <li class="social-links__item"><a href="http://instagram.com/circuitbeard/" class="social-links__link"><i class="mdi mdi-instagram"></i></a></li>
+                    <li class="social-links__item"><a href="https://www.youtube.com/c/circuitbeard" class="social-links__link"><i class="mdi mdi-youtube-play"></i></a></li>
+                    <li class="social-links__item"><a href="http://github.com/circuitbeard" target="_blank" class="social-links__link"><i class="mdi mdi-github-circle"></i></a></li>
+                </ul>
+                <p class="copyright">&copy; Circuitbeard {{ 'now' | date: "%Y" }}</p>
+            </div>
+        </aside>
+        
+        <div class="body-wrapper">
+            <div class="body">
+                {{ content }}
+            </div>
+        </div>
+
+        <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/ext/enquire.min.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/jquery/jquery.justifiedgallery.min.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/lightbox/lightbox.min.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/vendor/prism/prism.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+
+        {% include analytics.html %}
+        
+        <!-- UPTIME_CHECK_10DE9B82915046818F35E6E0BF0BFD9A -->
+
+    </body>
+</html>

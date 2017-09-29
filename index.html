@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+	<article class="post">
+		{% if post.masthead %}
+	    <a href="{{ site.baseurl }}{{ post.url }}"><img class="post__img" src="{{ post.masthead }}" alt="" /></a>
+	    {% endif %}
+	    <div class="post__content">
+	        <div class="post__date">{{ post.date | date: "%B %e, %Y" }}</div>
+	        <h2 class="post__heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+	        <div class="post__body trim">
+	            {{ post.content }}
+	        </div>
+	    </div>
+	</article>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+	{% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="pagination__prev">Older<span class="hidden-on-mobile"> posts</span></a>
+    {% endif %}
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="pagination__next">Newer<span class="hidden-on-mobile"> posts</span></a>
+    {% endif %}
+</div>
+{% endif %}
