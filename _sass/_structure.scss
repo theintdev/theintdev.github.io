@@ -22,7 +22,7 @@ body {
 .header {
 
     position: fixed;
-    background-color: $brand-color-teal;
+    background-color: $brand-color-black;
     color: #fff;
     height: 60px;
     width: 100%; 
@@ -46,6 +46,7 @@ body {
 
 .header__logo {
     padding-left: $global-spacing-unit-small;
+    line-height: 60px;
 }
 
 .header__logo object,
