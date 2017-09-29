@@ -161,7 +161,7 @@ body {
 }
 
 .sidebar__nav {
-    padding-top: 0;
+    padding-top: $global-spacing-unit;
 
     ul {
         @extend .bare;
