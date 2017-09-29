@@ -103,10 +103,9 @@ body {
     right: -240px;
     width: 240px;
     height: 100%;
-    background-color: $brand-color-teal;
+    background-color: $brand-color-black;
     color: white;
     text-align: center;
-    padding-top: $global-spacing-unit;
     z-index: 6;
 
     @media screen and (max-width: 62em) {
