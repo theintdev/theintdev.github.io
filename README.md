@@ -1,3 +1,4 @@
-# theintdev.github.io
+# The Introverted Dev Website
 
-Source for theintdev.com
+The code for the introverted dev website using Github Pages + Jekyll
+
