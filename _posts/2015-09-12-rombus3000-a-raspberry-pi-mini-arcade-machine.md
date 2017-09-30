@@ -3,10 +3,6 @@ layout: post
 title: Rombus3000 - A Raspberry Pi mini arcade machine
 image: /media/mh_rombus3000.jpg
 disqus_id: 1342
-tags:
- - raspberrypi
- - picade
- - rombus
 
 author_name: Matt Brailsford
 author_avatar: https://avatars1.githubusercontent.com/u/527305?s=200

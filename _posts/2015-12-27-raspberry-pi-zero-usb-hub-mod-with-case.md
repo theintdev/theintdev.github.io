@@ -3,9 +3,6 @@ layout: post
 title: Raspberry Pi Zero USB hub mod with case
 image: /media/mh_zerocase.jpg
 disqus_id: 1426
-tags:
- - raspberrypi
- - pizero
 
 author_name: Matt Brailsford
 author_avatar: https://avatars1.githubusercontent.com/u/527305?s=200

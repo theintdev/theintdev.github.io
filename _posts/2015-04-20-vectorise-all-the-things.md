@@ -3,8 +3,6 @@ layout: post
 title: Vectorise all the things
 image: /media/mh_laserlogo.jpg
 disqus_id: 1268
-tags:
- - lasercutting
 
 author_name: Matt Brailsford
 author_avatar: https://avatars1.githubusercontent.com/u/527305?s=200

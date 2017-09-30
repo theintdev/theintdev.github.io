@@ -7,7 +7,7 @@ tags: [general]
 author_name: Matt Brailsford
 author_avatar: https://avatars1.githubusercontent.com/u/527305?s=200
 author_url: twitter.com/mattbrailsford
-author_bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dui nec quam vestibulum semper non vel massa. Mauris vitae gravida sem. Vestibulum rutrum leo sit amet mi viverra, sit amet cursus metus consequat. Curabitur libero massa, efficitur ac sollicitudin et, convallis id nibh.
+author_bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dui nec quam vestibulum semper non vel massa. Mauris vitae gravida sem. Vestibulum rutrum leo sit amet mi viverra, sit amet cursus metus consequat.
 ---
 
 As with any blog, it’s always tricky to know where to start, but I thought the best thing would be to setup some expectations.

@@ -3,8 +3,6 @@ layout: post
 title: Spark Core Cheat Sheet
 image: /media/mh_spark.jpg
 disqus_id: 1258
-tags:
- - spark
 
 author_name: Matt Brailsford
 author_avatar: https://avatars1.githubusercontent.com/u/527305?s=200

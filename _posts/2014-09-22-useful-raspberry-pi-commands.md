@@ -3,9 +3,6 @@ layout: post
 title: Useful Raspberry Pi Commands
 image: /media/mh_terminal.jpg
 disqus_id: 1107
-tags:
- - raspberrypi
- - terminal
 
 author_name: Matt Brailsford
 author_avatar: https://avatars1.githubusercontent.com/u/527305?s=200
