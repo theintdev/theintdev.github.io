@@ -4,16 +4,25 @@
 	{% else %}
 	  <li><a href="{{ site.baseurl }}/">Blog</a></li>
 	{% endif %}
+	{% for node in site.pages %}
+		{% if node.show_in_primary_nav %}
+			{% if page.url == node.url %}
+				<li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+			{% else %}
+				<li><a href="{{node.url}}">{{node.title}}</a></li>
+			{% endif %}
+		{% endif %}
+	{% endfor %}
 </ul>
 
 <ul class="nav--secondary">
 	{% for node in site.pages %}
-	  {% if node.show_in_nav %}
-	    {% if page.url == node.url %}
-	      <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
-	    {% else %}
-	      <li><a href="{{node.url}}">{{node.title}}</a></li>
-	    {% endif %}
-	  {% endif %}
+		{% if node.show_in_secondary_nav %}
+			{% if page.url == node.url %}
+				<li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+			{% else %}
+				<li><a href="{{node.url}}">{{node.title}}</a></li>
+			{% endif %}
+		{% endif %}
 	{% endfor %}
 </ul>

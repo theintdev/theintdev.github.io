@@ -9,11 +9,21 @@ layout: default
     </div>
     {% endif %}
     <div class="post__content">
-        <div class="post__meta">Category / {{ page.date | date: "%b.%e.%Y" }} / Matt Brailsford</div>
+        <div class="post__meta">
+            {{ page.date | date: "%b.%e.%Y" }} 
+            {% if page.author_name %}
+            / {{ page.author_name }}
+            {% endif %}
+        </div>
         <h1 class="post__heading h2">{{ page.title }}</h1>
         <hr />
-        <div class="post__body trim">
-            {{ content }}
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                {{ content }}
+            </div>
+            <div class="col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
+                SIDEBAR
+            </div>
         </div>
         {% include share.html %}
     </div>

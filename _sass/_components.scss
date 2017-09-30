@@ -104,13 +104,7 @@
 }
 
 .comments {
-    background-color: #f5f5f5;
-    padding: $global-spacing-unit-small;
-
-    @media screen and (min-width: 48.5em){
-        padding: $global-spacing-unit;
-        padding-right: 150px;
-    }
+    background-color: $brand-color-grey;
 }
 
 .wide-content-core {
@@ -129,7 +123,11 @@
 }
 
 .image {
-    @extend .wide-content-core;
+
+    margin-bottom: $global-spacing-unit-small;  
+    @media screen and (min-width: 48.5em){
+        margin-bottom: $global-spacing-unit;  
+    }
 
     img {
         width: 100%;
@@ -137,31 +135,31 @@
 }
 
 pre[class*="language-"] {
-    @extend .wide-content-core;
-  
     border: 0;
     border-radius: 0;
+    margin-bottom: $global-spacing-unit-small;  
+    @media screen and (min-width: 48.5em){
+        margin-bottom: $global-spacing-unit;  
+    }
 }
 
 .gallery {
-    //@extend .wide-content;
-
-    margin-left: -5px;
-    margin-right: -5px;
-    margin-bottom: $global-spacing-unit-small;  
-      
+    
     width: auto;
 
+    margin-bottom: $global-spacing-unit-small;  
     @media screen and (min-width: 48.5em){
-        margin-left: -10px;
-        margin-right: -((150px + 10px) - $global-spacing-unit);
         margin-bottom: $global-spacing-unit;  
     }
 }
 
 .video {
-    @extend .wide-content-core;
     @extend .ratio--16x9;
+
+    margin-bottom: $global-spacing-unit-small;  
+    @media screen and (min-width: 48.5em){
+        margin-bottom: $global-spacing-unit;  
+    }
 
     iframe {
         @extend .ratio__content;
@@ -287,4 +285,36 @@ pre[class*="language-"] {
 
         width: 33.33%;
     }
+}
+
+.page-footer {
+    margin-top: $global-spacing-unit-small;
+
+    @media screen and (min-width: 62em) {
+        margin-top: $global-spacing-unit;
+    }
+}
+
+.page-footer__col2 {
+    @media screen and (max-width: 48em) {
+        margin-top: $global-spacing-unit-small;
+    }
+}
+
+/* Mailchimp Form */
+#mce-EMAIL {
+    border: 0;
+    padding: 15px;
+    width: 100%;
+    color: $text-color;
+}
+
+#mc-embedded-subscribe {
+    background-color: #222;
+    border: 0;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
 }

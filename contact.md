@@ -3,7 +3,7 @@ layout: page
 title: Contact
 permalink: /contact/
 masthead: /media/mh_contact.jpg
-show_in_nav: true
+show_in_primary_nav: true
 ---
 
 Please use the comments section for project specific questions, as other readers may have the same question.

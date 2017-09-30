@@ -2,8 +2,9 @@
 layout: post
 title: Hello World
 masthead: /media/mh_helloworld.jpg
-category: Dev
 tags: [general]
+
+author_name: Matt Brailsford
 ---
 
 As with any blog, it’s always tricky to know where to start, but I thought the best thing would be to setup some expectations.

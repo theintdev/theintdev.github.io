@@ -8,7 +8,7 @@ layout: default
 	<div class="ratio__content">
 		<div class="feature__content">
 			<div class="feature__content-inner">
-				<div class="feature__meta">Inspirational / {{ latest_post.date | date: "%b.%e.%Y" }} / Matt Brailsford</div>
+				<div class="feature__meta">{{ latest_post.date | date: "%b.%e.%Y" }} / Matt Brailsford</div>
 				<h2 class="feature__heading">{{ latest_post.title }}</h2>
 			</div>
 		</div>
@@ -16,20 +16,22 @@ layout: default
 </a>
 {% endif %}
 
-<h2 class="margin-none">Latest</h2>
-<hr />
+{% if paginator.page == 1 %}
+<h3 class="margin-none">Latest</h3>
+<hr class="margin-top-xsmall" />
+{% endif %}
 
 <div class="grid">
-	<div class="grid__row">
+	<div class="row">
 		{% for post in paginator.posts %}
-		<article class="grid__item post-summary">
+		<article class="col-xs-12 col-sm-6 col-lg-4 post-summary">
 			{% if post.masthead %}
 			<a href="{{ site.baseurl }}{{ post.url }}" class="ratio--16x9 post__thumb" style="background-image: url({{ post.masthead }});">
 				<div class="ratio__content post__thumb-overlay"></div>
 			</a>
 			{% endif %}
 			<div class="post__content">
-				<div class="post__meta">Category / {{ post.date | date: "%b.%e.%Y" }} / Matt Brailsford</div>
+				<div class="post__meta">{{ post.date | date: "%b.%e.%Y" }} / Matt Brailsford</div>
 				<h3 class="post__heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 				{% if post.excerpt %}
 					<p class="post__excerpt">{{ post.excerpt }}</p>

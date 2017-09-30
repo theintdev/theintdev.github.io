@@ -10,6 +10,11 @@
     a { color: $brand-color-teal; }
 }
 
+.white {
+    color: white !important;
+    a { color: white; }
+}
+
 .bg-teal {
     background-color: $brand-color-teal;
     color: white;
@@ -19,10 +24,10 @@
     }
 }
 
-.bg-white
-{
-    background-color: white;
-} 
+.bg-grey {
+    background-color: $brand-color-grey;
+    color: $text-color;
+}
 
 /* Lists */
 .bare 
@@ -34,6 +39,15 @@
     > li:before
     {
         display: none;
+    }
+}
+
+/* Box */
+.box {
+    padding: $global-spacing-unit-small;
+
+    @media screen and (min-width: 62em){
+        padding: $global-spacing-unit;
     }
 }
 

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Privacy
+permalink: /privacy-policy/
 masthead: /media/mh_about.jpg
-show_in_primary_nav: true
+show_in_secondary_nav: true
 ---
 
 Hey,
