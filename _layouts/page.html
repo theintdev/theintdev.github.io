@@ -12,12 +12,14 @@ layout: default
         <h1 class="post__heading h2">{{ page.title }}</h1>
         <hr />
         <div class="row">
-                <div class="col-xs-12 col-sm-8">
+                <div class="col-xs-12 col-md-8">
                     {{ content }}
                 </div>
-                <div class="col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
-                    <h4>Share</h4>
-                    {% include share.html %}
+                <div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-1">
+                    <div class="sticky">
+                        <h4>Share</h4>
+                        {% include share.html %}
+                    </div>
                 </div>
             </div>
     </div>

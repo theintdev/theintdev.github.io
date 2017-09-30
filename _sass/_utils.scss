@@ -116,14 +116,14 @@ $spacing-sizes: (
 
 .hidden-on-mobile
 {
-    @media screen and (max-width: 48.5em){
+    @media screen and (max-width: 62em){
         display: none;
     }
 }
 
 .visible-on-mobile
 {
-    @media screen and (min-width: 48.5em){
+    @media screen and (min-width: 62em){
         display: none;
     }
 }
