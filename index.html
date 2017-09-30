@@ -28,6 +28,9 @@ layout: default
 			<div class="post__content">
 				<div class="post__meta">Category / {{ post.date | date: "%b.%e.%Y" }} / Matt Brailsford</div>
 				<h3 class="post__heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+				{% if post.excerpt %}
+					<p class="post__excerpt">{{ post.excerpt }}</p>
+				{% endif %}
 			</div>
 		</article>
 	{% endfor %}
