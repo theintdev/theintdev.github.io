@@ -32,6 +32,9 @@ url: https://www.theintdev.com
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+# Your github repository name
+repository: "theintdev/theintdev.github.io"
+
 # Define the number of posts to display per page
 paginate: 5
 
@@ -58,7 +61,7 @@ sass:
   style: :expanded # You might prefer to minify using :compressed
 
 # Use the following plug-ins
-gems:
+plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-paginate # Allow pagination of collections
