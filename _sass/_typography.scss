@@ -15,14 +15,11 @@ html
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,p
 {
     margin: 0 0 $global-spacing-unit-small;    
-
-    @media screen and (min-width: 48.5em){
-        margin: 0 0 $global-spacing-unit; 
-    }
 }
 
 h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6
 {
+    font-family: 'Dosis', monospace;
     color: $text-color;
     font-weight: bold;
     text-transform: uppercase;
@@ -31,7 +28,6 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6
 h1,.h1,
 h2,.h2
 {
-    font-family: 'Dosis', monospace;
     @include font-size(35px, 35px);
 }
 
@@ -101,13 +97,18 @@ ol
 hr
 {
     border: 0;
-    height: 1px;
+    height: 2px;
     background: $border-color;
-    margin-top: $global-spacing-unit;
-    margin-bottom: $global-spacing-unit;
+    margin-top: $global-spacing-unit-small;
+    margin-bottom: $global-spacing-unit-small;
+
+    @media screen and (min-width: 62em){
+        margin-top: $global-spacing-unit;
+        margin-bottom: $global-spacing-unit;
+    }
 
     &.hr--large {
-        @media screen and (min-width:48.5em){
+        @media screen and (min-width: 48.5em){
             margin-top: $global-spacing-unit-large;
             margin-bottom: $global-spacing-unit-large;
         }

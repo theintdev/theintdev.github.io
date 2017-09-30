@@ -2,11 +2,8 @@
 layout: post
 title: Hello World
 masthead: /media/mh_helloworld.jpg
-disqus_id: 1066
-tags:
- - general
-redirect_from: 
- - /blog/hello-world
+category: Dev
+tags: [general]
 ---
 
 As with any blog, it’s always tricky to know where to start, but I thought the best thing would be to setup some expectations.

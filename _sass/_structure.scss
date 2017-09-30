@@ -44,7 +44,7 @@ body {
 }
 
 .header__logo {
-    padding-left: $global-spacing-unit;
+    padding-left: $global-spacing-unit-small;
     line-height: 60px;
 }
 
@@ -166,19 +166,29 @@ body {
         @extend .bare;
     }
 
+    li {
+        font-family: 'Dosis', monospace;
+        font-weight: bold;
+
+        @include font-size(20px, 26px);
+    }
+
     a {
         color: white;
-        font-weight: bold;
         text-transform: uppercase;
         line-height: $global-spacing-unit;
 
         @include hocus {
-            color: darken($brand-color-teal, 10%);
+            color: darken($brand-color-teal, 10%) !important;
         }
 
         &.active {
-            color: darken($brand-color-teal, 10%);
+            color: darken($brand-color-teal, 10%) !important;
         }
+    }
+
+    .nav--secondary a {
+        color: rgba(255,255,255,0.2);
     }
 }
 
@@ -213,6 +223,11 @@ body {
 .body {
     max-width: 1200px;
     margin: 0;
+    padding: $global-spacing-unit-small;
+
+    @media screen and (min-width: 62em){
+        padding: $global-spacing-unit;
+    }
 }
 
 footer {

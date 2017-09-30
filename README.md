@@ -1,4 +1,4 @@
-# The Introverted Dev Website
+# The Introverted Developer Website
 
-The code for the introverted dev website using Github Pages + Jekyll
+The code for the introverted developer website using Github Pages + Jekyll
 

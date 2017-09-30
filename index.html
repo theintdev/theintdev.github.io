@@ -2,20 +2,37 @@
 layout: default
 ---
 
-{% for post in paginator.posts %}
-	<article class="post">
-		{% if post.masthead %}
-	    <a href="{{ site.baseurl }}{{ post.url }}"><img class="post__img" src="{{ post.masthead }}" alt="" /></a>
-	    {% endif %}
-	    <div class="post__content">
-	        <div class="post__date">{{ post.date | date: "%B %e, %Y" }}</div>
-	        <h2 class="post__heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-	        <div class="post__body trim">
-	            {{ post.content }}
-	        </div>
-	    </div>
-	</article>
-{% endfor %}
+<a href="/" class="feature ratio--16x9" style="background-image: url(/media/mh_helloworld.jpg);">
+	<div class="ratio__content">
+		<div class="feature__content">
+			<div class="feature__content-inner">
+				<div class="feature__meta">Inspirational / SEP.21.2014 / Matt Brailsford</div>
+				<h2 class="feature__heading">HELLO WORLD</h2>
+			</div>
+		</div>
+	</div>
+</a>
+
+<h2 class="margin-none">Latest</h2>
+<hr />
+
+<div class="grid">
+	<div class="grid__row">
+		{% for post in paginator.posts %}
+		<article class="grid__item post-summary">
+			{% if post.masthead %}
+			<a href="{{ site.baseurl }}{{ post.url }}" class="ratio--16x9 post__thumb" style="background-image: url({{ post.masthead }});">
+				<div class="ratio__content post__thumb-overlay"></div>
+			</a>
+			{% endif %}
+			<div class="post__content">
+				<div class="post__meta">Category / {{ post.date | date: "%b.%e.%Y" }} / Matt Brailsford</div>
+				<h3 class="post__heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+			</div>
+		</article>
+	{% endfor %}
+	</div>
+</div>
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">

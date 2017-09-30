@@ -5,7 +5,9 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
     
-        {% if page.title %}
+        {% if page.meta_title %}
+        <title>{{ page.meta_title }}</title>
+        {% elsif page.title %}
         <title>{{ page.title }} | {{ site.name }}</title>
         {% else %}
         <title>{{ site.name }} – {{ site.description }}</title>
@@ -60,13 +62,12 @@
             </nav>
             <div class="sidebar__bottom">
                 <ul class="social-links">
-                    <li class="social-links__item"><a href="http://twitter.com/circuitbeard" target="_blank" class="social-links__link"><i class="mdi mdi-twitter"></i></a></li>
-                    <li class="social-links__item"><a href="https://www.facebook.com/circuitbeard" class="social-links__link"><i class="mdi mdi-facebook"></i></a></li>
-                    <li class="social-links__item"><a href="http://instagram.com/circuitbeard/" class="social-links__link"><i class="mdi mdi-instagram"></i></a></li>
-                    <li class="social-links__item"><a href="https://www.youtube.com/c/circuitbeard" class="social-links__link"><i class="mdi mdi-youtube-play"></i></a></li>
-                    <li class="social-links__item"><a href="http://github.com/circuitbeard" target="_blank" class="social-links__link"><i class="mdi mdi-github-circle"></i></a></li>
+                    <li class="social-links__item"><a href="http://twitter.com/theintdev" target="_blank" class="social-links__link"><i class="mdi mdi-twitter"></i></a></li>
+                    <li class="social-links__item"><a href="https://www.facebook.com/theintdevblog" class="social-links__link"><i class="mdi mdi-facebook"></i></a></li>
+                    <li class="social-links__item"><a href="http://instagram.com/theintdev/" class="social-links__link"><i class="mdi mdi-instagram"></i></a></li>
+                    <li class="social-links__item"><a href="http://github.com/theintdev" target="_blank" class="social-links__link"><i class="mdi mdi-github-circle"></i></a></li>
                 </ul>
-                <p class="copyright">&copy; The Introverted Dev {{ 'now' | date: "%Y" }}</p>
+                <p class="copyright">&copy; The Int Dev {{ 'now' | date: "%Y" }}</p>
             </div>
         </aside>
         

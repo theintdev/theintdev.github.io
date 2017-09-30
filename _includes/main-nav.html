@@ -1,9 +1,12 @@
-<ul>
+<ul class="nav--primary">
 	{% if page.layout == 'default' or page.layout == 'post' %}
 	  <li class="active"><a href="{{ site.baseurl }}/" class="active">Blog</a></li>
 	{% else %}
 	  <li><a href="{{ site.baseurl }}/">Blog</a></li>
 	{% endif %}
+</ul>
+
+<ul class="nav--secondary">
 	{% for node in site.pages %}
 	  {% if node.show_in_nav %}
 	    {% if page.url == node.url %}
