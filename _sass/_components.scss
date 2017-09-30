@@ -33,11 +33,7 @@
 }
 
 .post {
-    margin-bottom: $global-spacing-unit-small;
 
-    @media screen and (min-width: 62em){
-        margin-bottom: $global-spacing-unit;
-    }
 }
 
 .post__image {
