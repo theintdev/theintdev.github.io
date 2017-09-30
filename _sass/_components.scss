@@ -173,20 +173,16 @@ pre[class*="language-"] {
 }
 
 .pagination {
-    margin: $global-spacing-unit-small;
-    background-color: rgba(255,255,255,.1);
+    background-color: $brand-color-black;
 
     @include clearfix();
-
-    @media screen and (min-width: 62em){
-        margin: $global-spacing-unit;
-    }
 }
 
 .pagination__prev,
 .pagination__next {
 
     display: inline-block;
+    font-family: 'Dosis', monospace;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
