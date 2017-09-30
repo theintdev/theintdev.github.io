@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rombus3000 - A Raspberry Pi mini arcade machine
-masthead: /media/mh_rombus3000.jpg
+image: /media/mh_rombus3000.jpg
 disqus_id: 1342
 tags:
  - raspberrypi

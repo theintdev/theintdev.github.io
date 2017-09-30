@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Useful Raspberry Pi Commands
-masthead: /media/mh_terminal.jpg
+image: /media/mh_terminal.jpg
 disqus_id: 1107
 tags:
  - raspberrypi

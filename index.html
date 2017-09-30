@@ -4,7 +4,7 @@ layout: default
 
 {% assign latest_post = site.posts.first %}
 {% if latest_post and paginator.page == 1 %}
-<a href="{{ site.baseurl }}{{ latest_post.url }}" class="feature ratio--16x9" style="background-image: url({{ latest_post.masthead }});">
+<a href="{{ site.baseurl }}{{ latest_post.url }}" class="feature ratio--16x9" style="background-image: url({{ latest_post.image }});">
 	<div class="ratio__content">
 		<div class="feature__content">
 			<div class="feature__content-inner">
@@ -25,16 +25,21 @@ layout: default
 	<div class="row">
 		{% for post in paginator.posts %}
 		<article class="col-xs-12 col-sm-6 col-lg-4 post-summary">
-			{% if post.masthead %}
-			<a href="{{ site.baseurl }}{{ post.url }}" class="ratio--16x9 post__thumb" style="background-image: url({{ post.masthead }});">
+			{% if post.image %}
+			<a href="{{ site.baseurl }}{{ post.url }}" class="ratio--16x9 post__thumb" style="background-image: url({{ post.image }});">
 				<div class="ratio__content post__thumb-overlay"></div>
 			</a>
 			{% endif %}
 			<div class="post__content">
-				<div class="post__meta">{{ post.date | date: "%b.%e.%Y" }} / Matt Brailsford</div>
+				<div class="post__meta">
+					{{ page.date | date: "%b.%e.%Y" }} 
+					{% if page.author_name %}
+					/ {{ page.author_name }}
+					{% endif %}
+				</div>
 				<h3 class="post__heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 				{% if post.excerpt %}
-					<p class="post__excerpt">{{ post.excerpt }}</p>
+					<p class="post__excerpt">{{ post.excerpt | strip_html | truncatewords:50 }}</p>
 				{% endif %}
 			</div>
 		</article>

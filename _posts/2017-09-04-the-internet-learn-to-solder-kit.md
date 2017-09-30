@@ -2,7 +2,7 @@
 layout: post
 title: The Internet Learn To Solder Kit
 excerpt: A learn to solder kit based on the "The Internet" from the hit TV show, The IT Crowd
-masthead: /media/mh_theinternet.jpg
+image: /media/mh_theinternet.jpg
 tags:
  - kits
  - soldering

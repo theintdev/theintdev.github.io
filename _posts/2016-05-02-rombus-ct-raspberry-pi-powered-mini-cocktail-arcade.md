@@ -1,15 +1,12 @@
 ---
 layout: post
 title: Rombus-CT - A Raspberry Pi powered mini cocktail arcade
-masthead: /media/mh_rombusct.jpg
+image: /media/mh_rombusct.jpg
 disqus_id: 1448
 tags:
  - raspberrypi
  - picade
  - rombus
-redirect_from: 
- - /blog/rombus-ct-a-raspberry-pi-powered-mini-cocktail-arcade
- - /rombusct
 ---
 
 {:external: rel="nofollow" target="_blank"}

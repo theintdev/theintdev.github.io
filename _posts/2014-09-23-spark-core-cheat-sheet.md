@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Spark Core Cheat Sheet
-masthead: /media/mh_spark.jpg
+image: /media/mh_spark.jpg
 disqus_id: 1258
 tags:
  - spark

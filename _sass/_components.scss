@@ -1,8 +1,34 @@
 /* 
     ===============================
-    STRUCTURE
+    COMPONENTS
     ===============================
 */
+
+.button {
+    display: block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222;
+    border: 0;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 15px;
+    cursor: pointer;
+
+    @include transition(background-color .25s ease);
+
+    @include hocus {
+        background-color: $brand-color-teal;
+        color: white;
+
+        .bg-teal & {
+            background-color: $brand-color-teal-dark;
+        }
+    }
+}
 
 .social-links {
     @extend .bare;
@@ -27,7 +53,7 @@
 }
 
 .copyright {
-    @include font-size(10px, 10px);  
+    @include font-size(10px, 16px);  
     color: darken($brand-color-teal, 10%);
     text-transform: uppercase;
 }
@@ -92,13 +118,18 @@
 .share {
     @include font-size(20px, 20px);
 
-    padding-top: $global-spacing-unit;
-
     a {
-        color: $brand-color-grey;
+        display: inline-block;
+        color: white;
+        background-color: $text-color;
+        width: $global-spacing-unit;
+        height: $global-spacing-unit;
+        text-align: center;
+        line-height:  $global-spacing-unit;
+        @include transition(background-color .25s ease);
 
         @include hocus {
-            color: $brand-color-teal;
+            background-color: $brand-color-teal;
         }
     }
 }
@@ -296,9 +327,24 @@ pre[class*="language-"] {
 }
 
 .page-footer__col2 {
-    @media screen and (max-width: 48em) {
+    @media screen and (max-width: 47.9em) {
         margin-top: $global-spacing-unit-small;
     }
+}
+
+.author {
+    text-align: center;
+}
+
+.author__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-bottom: $global-spacing-unit-small;
+}
+
+.author__bio {
+    text-align: justify;
 }
 
 /* Mailchimp Form */
@@ -307,14 +353,4 @@ pre[class*="language-"] {
     padding: 15px;
     width: 100%;
     color: $text-color;
-}
-
-#mc-embedded-subscribe {
-    background-color: #222;
-    border: 0;
-    padding: 15px;
-    width: 100%;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 15px;
 }

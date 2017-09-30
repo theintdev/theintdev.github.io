@@ -3,8 +3,8 @@ layout: default
 ---
 
 <article class="post">
-    {% if page.masthead %}
-    <div class="post__image ratio--21x9" style="background-image: url({{ page.masthead }});">
+    {% if page.image %}
+    <div class="post__image ratio--21x9" style="background-image: url({{ page.image }});">
         <div class="ratio__content"></div>
     </div>
     {% endif %}
@@ -22,10 +22,29 @@ layout: default
                 {{ content }}
             </div>
             <div class="col-xs-12 col-sm-4 col-lg-3 col-lg-offset-1">
-                SIDEBAR
+                {% if page.author_name %}
+                    <div class="author">
+                        {% if page.author_avatar %}
+                            <img src="{{ page.author_avatar }}" class="author__img" />
+                        {% endif %}
+                        <h4 class="author__name">
+                            {% if page.author_url %}
+                                <a href="{{ page.author_url }}" rel="nofollow" target="_blank">{{ page.author_name }}</a>
+                            {% else %} 
+                                {{ page.author_name }}
+                            {% endif %}
+                        </h4>
+                        {% if page.author_bio %}
+                            <p class="author__bio">{{ page.author_bio | strip_html | truncatewords:100 }}</p>
+                        {% endif %}
+                    </div>
+                    <hr />
+                {% endif %}
+                <h4>Share</h4>
+                {% include share.html %}
             </div>
         </div>
-        {% include share.html %}
+        
     </div>
 	{% include disqus.html %}
 </article>

@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-masthead: /media/mh_about.jpg
+image: /media/mh_about.jpg
 show_in_primary_nav: true
 ---
 

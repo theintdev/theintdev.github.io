@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Raspberry Pi Zero USB hub mod with case
-masthead: /media/mh_zerocase.jpg
+image: /media/mh_zerocase.jpg
 disqus_id: 1426
 tags:
  - raspberrypi

@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
-masthead: /media/mh_contact.jpg
+image: /media/mh_contact.jpg
 show_in_primary_nav: true
 ---
 

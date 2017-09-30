@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vectorise all the things
-masthead: /media/mh_laserlogo.jpg
+image: /media/mh_laserlogo.jpg
 disqus_id: 1268
 tags:
  - lasercutting
