@@ -5,8 +5,11 @@ image: /media/mh_laserlogo.jpg
 disqus_id: 1268
 tags:
  - lasercutting
-redirect_from: 
- - /blog/vectorise-all-the-things
+
+author_name: Matt Brailsford
+author_avatar: https://avatars1.githubusercontent.com/u/527305?s=200
+author_url: twitter.com/mattbrailsford
+author_bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dui nec quam vestibulum semper non vel massa. Mauris vitae gravida sem. Vestibulum rutrum leo sit amet mi viverra, sit amet cursus metus consequat.
 ---
 
 Lately I’ve been working on some educational kits that I’m hoping to release soon. One important element for me is to be able to brand the products up so people know the kits are authentic circuitbeard. Originally I was just going to raster etch them, however this takes way too much time, so today I spent a bit of time creating vector versions of my logos to speed things up.
