@@ -32,9 +32,9 @@ layout: default
 			{% endif %}
 			<div class="post__content">
 				<div class="post__meta">
-					{{ page.date | date: "%b.%e.%Y" }} 
-					{% if page.author_name %}
-					/ {{ page.author_name }}
+					{{ post.date | date: "%b.%e.%Y" }} 
+					{% if post.author_name %}
+					/ {{ post.author_name }}
 					{% endif %}
 				</div>
 				<h3 class="post__heading"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
