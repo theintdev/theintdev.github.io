@@ -4,10 +4,13 @@ layout: default
 
 <article class="post">
     {% if page.masthead %}
-    <img class="post__img" src="{{ page.masthead }}" alt="" />
+    <div class="post__image ratio--21x9" style="background-image: url({{ page.masthead }});">
+        <div class="ratio__content"></div>
+    </div>
     {% endif %}
     <div class="post__content">
         <h1 class="post__heading h2">{{ page.title }}</h1>
+        <hr />
         <div class="post__body trim">
             {{ content }}
         </div>
