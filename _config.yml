@@ -74,3 +74,5 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - run.bat
+  - run_draft.bat
