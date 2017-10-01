@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Social -->
-<meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
 <meta name="twitter:site" content="@theintdev" />
 <meta name="twitter:card" content="summary" />
 
 <!-- Title -->
 {% if page.meta_title %}
-<title>{{ page.meta_title }} | {{ site.name }}</title>
+<title>{{ page.meta_title }} | {{ site.title }}</title>
 {% elsif page.title %}
-<title>{{ page.title }} | {{ site.name }}</title>
+<title>{{ page.title }} | {{ site.title }}</title>
 {% else %}
-<title>{{ site.name }} – {{ site.description }}</title>
+<title>{{ site.title }} – {{ site.description }}</title>
 {% endif %}
 
 {% if page.meta_title %}
@@ -51,7 +51,7 @@
 {% if page.author_name %}
 <meta name="author" content="{{ page.author_name }}" />
 {% else %}
-<meta name="author" content="{{ site.name }}" />
+<meta name="author" content="{{ site.title }}" />
 {% endif %}
 
 <!--

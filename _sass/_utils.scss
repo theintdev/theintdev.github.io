@@ -115,7 +115,7 @@ $spacing-sizes: (
 
 
 .hidden-on-mobile
-{
+{ 
     @media screen and (max-width: 62em){
         display: none;
     }
