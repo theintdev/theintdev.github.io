@@ -53,9 +53,9 @@
 .col-xs-11,
 .col-xs-12 {
   box-sizing: border-box;
-  -ms-flex: 0 0 auto;
+  -ms-flex: 1 0 auto;
   -webkit-box-flex: 0;
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -267,9 +267,9 @@
   .col-sm-11,
   .col-sm-12 {
     box-sizing: border-box;
-    -ms-flex: 0 0 auto;
+    -ms-flex: 1 0 auto;
     -webkit-box-flex: 0;
-    flex: 0 0 auto;
+    flex: 1 0 auto;
     padding-right: 1rem;
     padding-left: 1rem;
   }
@@ -482,9 +482,9 @@
   .col-md-11,
   .col-md-12 {
     box-sizing: border-box;
-    -ms-flex: 0 0 auto;
+    -ms-flex: 1 0 auto;
     -webkit-box-flex: 0;
-    flex: 0 0 auto;
+    flex: 1 0 auto;
     padding-right: 1rem;
     padding-left: 1rem;
   }
@@ -697,9 +697,9 @@
   .col-lg-11,
   .col-lg-12 {
     box-sizing: border-box;
-    -ms-flex: 0 0 auto;
+    -ms-flex: 1 0 auto;
     -webkit-box-flex: 0;
-    flex: 0 0 auto;
+    flex: 1 0 auto;
     padding-right: 1rem;
     padding-left: 1rem;
   }
