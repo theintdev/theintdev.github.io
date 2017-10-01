@@ -243,6 +243,7 @@ img.right {
     transition: all .5s;
 }
 
-.zoom-hover:hover::before { 
+.zoom-hover:hover::before,
+.zoom-hover:focus::before { 
     transform: scale(1.1);
 }
