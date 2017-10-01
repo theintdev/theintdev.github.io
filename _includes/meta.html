@@ -43,8 +43,13 @@
 
     <!-- Image -->
     {% if page.image %}
+    {% if page.image contains "http" %}
     <meta property="og:image" content="{{ page.image }}" />
     <meta name="twitter:image" content="{{ page.image }}" />
+    {% else %}
+    <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
+    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
+    {% endif %}
     {% endif %}
 
     <!-- Author -->
