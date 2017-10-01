@@ -50,7 +50,7 @@
     <!-- Author -->
     {% if page.author.name %}
     <meta name="author" content="{{ page.author.name }}" />
-    {% if site.author.name %}
+    {% elsif site.author.name %}
     <meta name="author" content="{{ site.author.name }}" />
     {% else %}
     <meta name="author" content="{{ site.title }}" />
@@ -58,6 +58,6 @@
 
     {% if page.author.twitter %}
     <meta name="twitter:creator" content="@{{ page.author.twitter }}" />
-    {% if site.author.twitter %}
+    {% elsif site.author.twitter %}
     <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
-    {% endif %}
+    {% endif %}  
