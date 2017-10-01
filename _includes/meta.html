@@ -1,28 +1,59 @@
-    <meta charset="utf-8" />
-    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:site_name" content="The Introverted Developer" />
-    <meta name="twitter:site" content="@theintdev" />
-    <meta name="twitter:card" content="summary" />
+<!-- General -->
+<meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-    <meta name="twitter:description" content="{{ page.excerpt| strip_html }}" />
-    {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
-    <meta name="twitter:description" content="{{ site.description }}" />
-    {% endif %}
-    <meta name="author" content="{{ site.name }}" />
+<!-- Social -->
+<meta property="og:site_name" content="{{ site.name }}" />
+<meta name="twitter:site" content="@theintdev" />
+<meta name="twitter:card" content="summary" />
 
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta name="twitter:title" content="{{ page.title }}" />
-    {% endif %}
+<!-- Title -->
+{% if page.meta_title %}
+<title>{{ page.meta_title }} | {{ site.name }}</title>
+{% elsif page.title %}
+<title>{{ page.title }} | {{ site.name }}</title>
+{% else %}
+<title>{{ site.name }} – {{ site.description }}</title>
+{% endif %}
 
-    {% if page.image %}
-    <meta property="og:image" content="{{ page.image }}" />
-    <meta name="twitter:image" content="{{ page.image }}" />
-    {% endif %}
+{% if page.meta_title %}
+<meta property="og:title" content="{{ page.meta_title }}" />
+<meta name="twitter:title" content="{{ page.meta_title }}" />
+{% elsif page.title %}
+<meta property="og:title" content="{{ page.title }}" />
+<meta name="twitter:title" content="{{ page.title }}" />
+{% endif %}
+
+<!-- Description -->
+{% if page.meta_description %}
+<meta name="description" content="{{ page.meta_description | strip_html }}" />
+<meta property="og:description" content="{{ page.meta_description | strip_html }}" />
+<meta name="twitter:description" content="{{ page.meta_description | strip_html }}" />
+{% elsif page.excerpt %}
+<meta name="description" content="{{ page.excerpt| strip_html }}" />
+<meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+<meta name="twitter:description" content="{{ page.excerpt| strip_html }}" />
+{% else %}
+<meta name="description" content="{{ site.description }}">
+<meta property="og:description" content="{{ site.description }}" />
+<meta name="twitter:description" content="{{ site.description }}" />
+{% endif %}
+
+<!-- Image -->
+{% if page.image %}
+<meta property="og:image" content="{{ page.image }}" />
+<meta name="twitter:image" content="{{ page.image }}" />
+{% endif %}
+
+<!-- Author -->
+{% if page.author_name %}
+<meta name="author" content="{{ page.author_name }}" />
+{% else %}
+<meta name="author" content="{{ site.name }}" />
+{% endif %}
+
+<!--
+<meta name="twitter:creator" content="@nickbilton" />
+-->

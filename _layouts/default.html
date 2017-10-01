@@ -4,15 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
-    
-        {% if page.meta_title %}
-        <title>{{ page.meta_title }}</title>
-        {% elsif page.title %}
-        <title>{{ page.title }} | {{ site.name }}</title>
-        {% else %}
-        <title>{{ site.name }} – {{ site.description }}</title>
-        {% endif %}
-        
+      
         {% include meta.html %}
 
         <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
