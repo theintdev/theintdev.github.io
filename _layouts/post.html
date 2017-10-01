@@ -11,8 +11,10 @@ layout: default
     <div class="post__content">
         <div class="post__meta">
             {{ page.date | date: "%b.%e.%Y" }} 
-            {% if page.author_name %}
-            / {{ page.author_name }}
+            {% if page.author.name %}
+            / {{ page.author.name }}
+            {% elsif page.author.twitter %}
+            / @{{ page.author.twitter }}
             {% endif %}
         </div>
         <h1 class="post__heading h2">{{ page.title }}</h1>
