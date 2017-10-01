@@ -7,9 +7,13 @@
 	{% for node in site.pages %}
 		{% if node.show_in_primary_nav %}
 			{% if page.url == node.url %}
-				<li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+				<li class="active"><a href="{{node.url}}" class="active">
+						{% if node.nav_title %}{{ node.nav_title }}{% else %}{{ node.title }}{% endif %}
+				</a></li>
 			{% else %}
-				<li><a href="{{node.url}}">{{node.title}}</a></li>
+				<li><a href="{{node.url}}">
+						{% if node.nav_title %}{{ node.nav_title }}{% else %}{{ node.title }}{% endif %}	
+				</a></li>
 			{% endif %}
 		{% endif %}
 	{% endfor %}
@@ -19,9 +23,13 @@
 	{% for node in site.pages %}
 		{% if node.show_in_secondary_nav %}
 			{% if page.url == node.url %}
-				<li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+				<li class="active"><a href="{{node.url}}" class="active">
+						{% if node.nav_title %}{{ node.nav_title }}{% else %}{{ node.title }}{% endif %}	
+				</a></li>
 			{% else %}
-				<li><a href="{{node.url}}">{{node.title}}</a></li>
+				<li><a href="{{node.url}}">
+						{% if node.nav_title %}{{ node.nav_title }}{% else %}{{ node.title }}{% endif %}	
+				</a></li>
 			{% endif %}
 		{% endif %}
 	{% endfor %}

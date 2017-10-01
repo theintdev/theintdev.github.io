@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Privacy
+title: Privacy Policy
+nav_title: Privacy
 permalink: /privacy-policy/
 image: /media/mh_about.jpg
 show_in_secondary_nav: true
