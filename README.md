@@ -72,4 +72,10 @@ If you are uncomfortable with creating a pull request, feel free to [email us](m
 
 ## Suggesting a topic
 
+Topic suggestions or questions should be submitted via the [Issue Tracker](https://github.com/theintdev/theintdev.github.io/issues) and be labeled with either the `topic suggestion` or `question` label.
+
 ## Reporting website issues
+
+Website issue should be submitted via the [Issue Tracker](https://github.com/theintdev/theintdev.github.io/issues) and be labeled with the `website bug` label.
+
+Pull requests for content issues are also welcomed.
