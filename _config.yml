@@ -13,7 +13,7 @@ author:
   name: The Introverted Developer
   avatar: https://avatars1.githubusercontent.com/u/32388982
   twitter: theintdev
-  url: https://twitter.com/mattbrailsford
+  url: https://www.theintdev.com
   bio: A place for introverted developers to share experiences and learn to make the most of their introversion.
 
 #
@@ -46,6 +46,8 @@ paginate: 12
 #
 # !! You don't need to change any of the configuration flags below !!
 #
+github: [metadata]
+
 permalink: pretty
 
 # The release of Jekyll Now that you're using
