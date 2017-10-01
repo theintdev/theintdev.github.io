@@ -1,12 +1,22 @@
+{% if include.author.name %}
+{% assign name = include.author.name %}
+{% elsif include.author.twitter %}
+{% assign name = "@" | append: include.author.twitter %}
+{% else %}
+{% assign name = "Anonymous" %}
+{% endif %}
+
 <div class="author">
     {% if include.author.avatar %}
         <img src="{{ include.author.avatar }}" class="author__img" />
     {% endif %}
     <h4 class="author__name">
         {% if include.author.url %}
-            <a href="{{ include.author.url }}" rel="nofollow" target="_blank">{{ include.author.name }}</a>
+            <a href="{{ include.author.url }}" rel="nofollow" target="_blank">{{ name }}</a>
+        {% elsif include.author.twitter %}
+            <a href="https://twitter.com/{{ include.author.twitter }}" rel="nofollow" target="_blank">{{ name }}</a>
         {% else %} 
-            {{ include.author.name }}
+            {{ name }}
         {% endif %}
     </h4>
     {% if include.author.bio %}
