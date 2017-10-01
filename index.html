@@ -32,7 +32,7 @@ layout: default
 			{% endif %}
 			<div class="post__content">
 				<div class="post__meta">
-					{{ post.date | date: "%b.%e.%Y" }} 
+					{{ post.date | date: "%b.%d.%Y" }} 
 					{% if post.author.name %}
 					/ {{ post.author.name }}
 					{% elsif post.author.twitter %}
