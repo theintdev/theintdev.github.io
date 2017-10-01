@@ -77,17 +77,15 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: $global-spacing-unit-small;
+
+    @media screen and (min-width: 62em){
+        margin-bottom: $global-spacing-unit;
+    }
 }
 
-.post__content {
+.post-summary .post__content {
     padding: $global-spacing-unit-small 0;
-    background-color: white;
-
-    @media screen and (min-width: 48.5em){
-        .post & {
-            padding: $global-spacing-unit 0;
-        }
-    }
 }
 
 .post > .post__content:first-child {
