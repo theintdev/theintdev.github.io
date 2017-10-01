@@ -8,7 +8,14 @@ layout: default
 	<div class="ratio__content">
 		<div class="feature__content">
 			<div class="feature__content-inner">
-				<div class="feature__meta">{{ latest_post.date | date: "%b.%e.%Y" }} / Matt Brailsford</div>
+				<div class="feature__meta">
+					{{ latest_post.date | date: "%b.%d.%Y" }}
+					{% if latest_post.author.name %}
+					/ {{ latest_post.author.name }}
+					{% elsif latest_post.author.twitter %}
+					/ @{{ latest_post.author.twitter }}
+					{% endif %}
+				</div>
 				<h2 class="feature__heading">{{ latest_post.title }}</h2>
 			</div>
 		</div>
