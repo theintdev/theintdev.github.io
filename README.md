@@ -27,7 +27,7 @@ When creating a pull request, please follow this process:
    git pull theintdev master
    ```
 
-3. Create a new topic branch (off the main project `master` branch) to
+3. Create a new article branch (off the main project `master` branch) to
    contain your article:
 
    ```bash
@@ -55,19 +55,7 @@ When creating a pull request, please follow this process:
 
    **NB** Only the title, image and author name front matter are required
 
-   Any media assets should be placed inside the `media` folder in an article specific folder and should be no greater then 1000px in any given dimension.
-
-5. Commit your changes in logical chunks. Please adhere to these [git commit
-   message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-   or your code is unlikely be merged into the main project. Use Git's
-   [interactive rebase](https://help.github.com/articles/interactive-rebase)
-   feature to tidy up your commits before making them public.
-
-6. Locally merge (or rebase) the theintdev master branch into your topic branch:
-
-   ```bash
-   git pull [--rebase] theintdev master
-   ```
+5. Add any media assets used by your article into an article specific sub folder inside the root `media` folder. Images    should be no greater then 1000px in any given dimension.
 
 7. Push your topic branch up to your fork:
 
@@ -77,6 +65,8 @@ When creating a pull request, please follow this process:
 
 8. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
     with a clear title and description.
+
+Pull requests should only contain a single article submission. If you wish to submit multiple articles, you should submit these as individual pull requests.
 
 If you are uncomfortable with creating a pull request, feel free to [email us](mailto:hi@theintdev.com) a google doc or similar.
 
