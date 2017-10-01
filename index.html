@@ -4,7 +4,7 @@ layout: default
 
 {% assign latest_post = site.posts.first %}
 {% if latest_post and paginator.page == 1 %}
-<a href="{{ site.baseurl }}{{ latest_post.url }}" class="feature ratio--16x9" style="background-image: url({{ latest_post.image }});">
+<a href="{{ site.baseurl }}{{ latest_post.url }}" class="feature ratio--16x9 zoom-hover" style="background-image: url({{ latest_post.image }});">
 	<div class="ratio__content">
 		<div class="feature__content">
 			<div class="feature__content-inner">
@@ -33,7 +33,7 @@ layout: default
 		{% for post in paginator.posts %}
 		<article class="col-xs-12 col-sm-6 col-lg-4 post-summary">
 			{% if post.image %}
-			<a href="{{ site.baseurl }}{{ post.url }}" class="ratio--16x9 post__thumb" style="background-image: url({{ post.image }});">
+			<a href="{{ site.baseurl }}{{ post.url }}" class="ratio--16x9 post__thumb zoom-hover" style="background-image: url({{ post.image }});">
 				<div class="ratio__content post__thumb-overlay"></div>
 			</a>
 			{% endif %}
