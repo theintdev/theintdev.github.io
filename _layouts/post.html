@@ -24,23 +24,10 @@ layout: default
             <div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-1">
                 <div class="sticky">
                     <hr class="visible-on-mobile" />
-                    {% if page.author_name %}
-                        <div class="author">
-                            {% if page.author_avatar %}
-                                <img src="{{ page.author_avatar }}" class="author__img" />
-                            {% endif %}
-                            <h4 class="author__name">
-                                {% if page.author_url %}
-                                    <a href="{{ page.author_url }}" rel="nofollow" target="_blank">{{ page.author_name }}</a>
-                                {% else %} 
-                                    {{ page.author_name }}
-                                {% endif %}
-                            </h4>
-                            {% if page.author_bio %}
-                                <p class="author__bio">{{ page.author_bio | strip_html | truncatewords:100 }}</p>
-                            {% endif %}
-                        </div>
-                        <hr />
+                    {% if page.author %}
+                        {% include author.html author=page.author %} 
+                    {% elsif site.author %}
+                        {% include author.html author=site.author %} 
                     {% endif %}
                     <h4>Share</h4>
                     {% include share.html %}

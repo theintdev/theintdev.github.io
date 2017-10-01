@@ -4,10 +4,12 @@ title: Raspberry Pi Zero USB hub mod with case
 image: /media/mh_zerocase.jpg
 disqus_id: 1426
 
-author_name: Matt Brailsford
-author_avatar: https://avatars1.githubusercontent.com/u/527305?s=200
-author_url: twitter.com/mattbrailsford
-author_bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dui nec quam vestibulum semper non vel massa. Mauris vitae gravida sem. Vestibulum rutrum leo sit amet mi viverra, sit amet cursus metus consequat.
+author:
+  name: Matt Brailsford
+  avatar: https://avatars1.githubusercontent.com/u/527305?s=200
+  twitter: mattbrailsford
+  url: twitter.com/mattbrailsford
+  bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dui nec quam vestibulum semper non vel massa. Mauris vitae gravida sem. Vestibulum rutrum leo sit amet mi viverra, sit amet cursus metus consequat.
 ---
 
 If you were lucky enough to get your hands on one of the new [Raspberry Pi Zero's](https://www.raspberrypi.org/products/pi-zero/), one of the first things you are likely going to want to do is hook it up to a USB hub to add things like WiFi and a keyboard and mouse. Of course you can just connect an ordinary USB hub, but there isn't many compact solutions available just yet. There are a few methods that have been posted online so far, from [hacking an off the shelf USB hub](http://frederickvandenbosch.be/?p=1343), to [manufacturing a custom hub yourself](http://deluxecapacitor.com/projects/view/15). These are all great, but are either a little unpolished or require some advanced maker skills, so I thought I'd have a go myself at something that is a but more approachable by the average maker, and uses predominantly off the shelf parts. So here is what I came up with.

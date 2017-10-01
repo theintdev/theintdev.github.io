@@ -48,12 +48,16 @@
 {% endif %}
 
 <!-- Author -->
-{% if page.author_name %}
-<meta name="author" content="{{ page.author_name }}" />
+{% if page.author.name %}
+<meta name="author" content="{{ page.author.name }}" />
+{% if site.author.name %}
+<meta name="author" content="{{ site.author.name }}" />
 {% else %}
 <meta name="author" content="{{ site.title }}" />
 {% endif %}
 
-<!--
-<meta name="twitter:creator" content="@nickbilton" />
--->
+{% if page.author.twitter %}
+<meta name="twitter:creator" content="@{{ page.author.twitter }}" />
+{% if site.author.twitter %}
+<meta name="twitter:creator" content="@{{ site.author.twitter }}" />
+{% endif %}

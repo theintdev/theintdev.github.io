@@ -1,0 +1,16 @@
+<div class="author">
+    {% if include.author.avatar %}
+        <img src="{{ include.author.avatar }}" class="author__img" />
+    {% endif %}
+    <h4 class="author__name">
+        {% if include.author.url %}
+            <a href="{{ include.author.url }}" rel="nofollow" target="_blank">{{ include.author.name }}</a>
+        {% else %} 
+            {{ include.author.name }}
+        {% endif %}
+    </h4>
+    {% if include.author.bio %}
+        <p class="author__bio">{{ include.author.bio | strip_html | truncatewords:100 }}</p>
+    {% endif %}
+</div>
+<hr />

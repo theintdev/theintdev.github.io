@@ -4,10 +4,12 @@ title: Tomy Turnin' Turbo Dashboard Outrun Arcade
 excerpt: Build log for my retro Outrun arcade machine built from a Tomy Turnin' Turbo Dashboard 80s toy and a Raspberry Pi
 image: /media/mh_outrun.jpg
 
-author_name: Matt Brailsford
-author_avatar: https://avatars1.githubusercontent.com/u/527305?s=200
-author_url: twitter.com/mattbrailsford
-author_bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dui nec quam vestibulum semper non vel massa. Mauris vitae gravida sem. Vestibulum rutrum leo sit amet mi viverra, sit amet cursus metus consequat.
+author:
+  name: Matt Brailsford
+  avatar: https://avatars1.githubusercontent.com/u/527305?s=200
+  twitter: mattbrailsford
+  url: twitter.com/mattbrailsford
+  bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dui nec quam vestibulum semper non vel massa. Mauris vitae gravida sem. Vestibulum rutrum leo sit amet mi viverra, sit amet cursus metus consequat.
 ---
 
 {:external: rel="nofollow" target="_blank"}

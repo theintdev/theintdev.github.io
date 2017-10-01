@@ -8,8 +8,13 @@ title: The Introverted Developer
 # Short bio or description (displayed in the header)
 description: A place for introverted developers to share experiences and learn to make the most of their introversion.
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars1.githubusercontent.com/u/32388982
+# Default author information
+author:
+  name: The Introverted Developer
+  avatar: https://avatars1.githubusercontent.com/u/32388982
+  twitter: theintdev
+  url: https://twitter.com/mattbrailsford
+  bio: A place for introverted developers to share experiences and learn to make the most of their introversion.
 
 #
 # Flags below are optional
