@@ -19,11 +19,11 @@
     {% endif %}
 
     {% if page.meta_title %}
-    <meta property="og:title" content="{{ page.meta_title }}" />
-    <meta name="twitter:title" content="{{ page.meta_title }}" />
+    <meta property="og:title" content="{{ page.meta_title | replace: '"', '&quot;' }}" />
+    <meta name="twitter:title" content="{{ page.meta_title | replace: '"', '&quot;' }}" />
     {% elsif page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta property="og:title" content="{{ page.title | replace: '"', '&quot;' }}" />
+    <meta name="twitter:title" content="{{ page.title | replace: '"', '&quot;' }}" />
     {% endif %}
 
     <!-- Description -->
