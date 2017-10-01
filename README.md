@@ -79,3 +79,7 @@ Topic suggestions or questions should be submitted via the [Issue Tracker](https
 Website issue should be submitted via the [Issue Tracker](https://github.com/theintdev/theintdev.github.io/issues) and be labeled with the `website bug` label.
 
 Pull requests for content issues are also welcomed.
+
+## Copyright
+
+Copyright © 2017 The Introverted Developer
