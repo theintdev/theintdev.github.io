@@ -122,10 +122,10 @@
         display: inline-block;
         color: white;
         background-color: $text-color;
-        width: $global-spacing-unit;
-        height: $global-spacing-unit;
+        width: $global-spacing-unit*1.25;
+        height: $global-spacing-unit*1.25;
+        line-height:  $global-spacing-unit*1.25;
         text-align: center;
-        line-height:  $global-spacing-unit;
         @include transition(background-color .25s ease);
 
         @include hocus {
