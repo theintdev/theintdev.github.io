@@ -17,4 +17,4 @@ We'll hopefully have more articles to add real soon, but untill then we just wan
 
 If you'd like to write for the blog [please see our instructions on how to contribute](https://github.com/theintdev/theintdev.github.io/blob/master/README.md).
 
-Photo by [wu yi](https://unsplash.com/photos/SEgJqTJ91c4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Photo by [TheAngryTeddy](https://pixabay.com/en/users/TheAngryTeddy-123386/) on [Pixabay](https://pixabay.com)
