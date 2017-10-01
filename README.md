@@ -53,6 +53,10 @@ When creating a pull request, please follow this process:
     Your markdown content goes here
    ```
 
+   **NB** Only the title, image and author name front matter are required
+
+   Any media assets should be placed inside the `media` folder in an article specific folder and should be no greater then 1000px in any given dimension.
+
 5. Commit your changes in logical chunks. Please adhere to these [git commit
    message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
    or your code is unlikely be merged into the main project. Use Git's
