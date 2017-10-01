@@ -8,7 +8,7 @@ author:
   name: Matt Brailsford
   avatar: https://avatars1.githubusercontent.com/u/527305?s=200
   twitter: mattbrailsford
-  url: twitter.com/mattbrailsford
+  url: https://twitter.com/mattbrailsford
   bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed dui nec quam vestibulum semper non vel massa. Mauris vitae gravida sem. Vestibulum rutrum leo sit amet mi viverra, sit amet cursus metus consequat.
 ---
 
