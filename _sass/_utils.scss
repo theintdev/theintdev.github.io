@@ -143,6 +143,20 @@ img.fill
     width: 100%;
 }
 
+img.left {
+    float: left;
+    margin: 0 $global-spacing-unit-small $global-spacing-unit-small 0;
+}
+
+img.right {
+    float: right;
+    margin: 0 0 $global-spacing-unit-small $global-spacing-unit-small;
+}
+
+.clear {
+    clear: both;
+}
+
 .rounded
 {
     @include border-radius($global-border-radius);

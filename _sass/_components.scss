@@ -46,20 +46,31 @@
     @include font-size(20px, 20px);
     color: rgba(255,255,255,.4);
 
-    @include hocus {
-        color: white;
+    i {
+        vertical-align: middle;
     }
 
+    img {
+        opacity: .4;
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        @include transition(opacity .25s ease);
+    }
+
+    @include hocus {
+        color: white;
+
+        img {
+            opacity: 1;
+        }
+    }
 }
 
 .copyright {
     @include font-size(10px, 16px);  
     color: darken($brand-color-teal, 10%);
     text-transform: uppercase;
-}
-
-.post {
-
 }
 
 .post__image {
@@ -77,6 +88,10 @@
             padding: $global-spacing-unit 0;
         }
     }
+}
+
+.post > .post__content:first-child {
+    padding-top: 0;
 }
 
 .post__meta {

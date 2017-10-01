@@ -67,6 +67,7 @@
                     <li class="social-links__item"><a href="https://www.facebook.com/theintdevblog" class="social-links__link"><i class="mdi mdi-facebook"></i></a></li>
                     <li class="social-links__item"><a href="http://instagram.com/theintdev/" class="social-links__link"><i class="mdi mdi-instagram"></i></a></li>
                     <li class="social-links__item"><a href="http://github.com/theintdev" target="_blank" class="social-links__link"><i class="mdi mdi-github-circle"></i></a></li>
+                    <li class="social-links__item"><a href="https://www.patreon.com/theintdev" target="_blank" class="social-links__link"><img src="/img/patreon.png" alt="Patreon"></a></li>
                 </ul>
                 <p class="copyright">&copy; Copyright {{ 'now' | date: "%Y" }}<br />The Introverted Developer</p>
             </div>
@@ -74,7 +75,7 @@
         
         <div class="body-wrapper">
             <div class="body">
-                {{ content }}
+                {{ content  | replace: '<a href="http', '<a rel="nofollow" target="_blank" href="http' }}
                 {% include page-footer.html %}
             </div>
         </div>
