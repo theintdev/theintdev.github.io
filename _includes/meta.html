@@ -9,7 +9,8 @@
     <meta name="twitter:card" content="summary" />
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ page.url | absolute_url }}" />
+    
+    <meta property="og:url" name="twitter:url" content="{{ page.url | absolute_url }}" />
 
     <!-- Title -->
     {% if page.meta_title %}
@@ -21,43 +22,34 @@
     {% endif %}
 
     {% if page.meta_title %}
-    <meta property="og:title" content="{{ page.meta_title | replace: '"', '&quot;' }}" />
-    <meta name="twitter:title" content="{{ page.meta_title | replace: '"', '&quot;' }}" />
+    <meta property="og:title" name="twitter:title" content="{{ page.meta_title | replace: '"', '&quot;' }}" />
     {% elsif page.title %}
-    <meta property="og:title" content="{{ page.title | replace: '"', '&quot;' }}" />
-    <meta name="twitter:title" content="{{ page.title | replace: '"', '&quot;' }}" />
+    <meta property="og:title" name="twitter:title" content="{{ page.title | replace: '"', '&quot;' }}" />
     {% else %}
-    <meta property="og:title" content="{{ site.title }} – {{ site.description }}" />
-    <meta name="twitter:title" content="{{ site.title }} – {{ site.description }}" />
+    <meta property="og:title" name="twitter:title" content="{{ site.title }} – {{ site.description }}" />
     {% endif %}
 
     <!-- Description -->
     {% if page.meta_description %}
     <meta name="description" content="{{ page.meta_description | strip_html | replace: '"', '&quot;' }}" />
-    <meta property="og:description" content="{{ page.meta_description | strip_html | replace: '"', '&quot;' }}" />
-    <meta name="twitter:description" content="{{ page.meta_description | strip_html | replace: '"', '&quot;' }}" />
+    <meta property="og:description" name="twitter:description" content="{{ page.meta_description | strip_html | replace: '"', '&quot;' }}" />
     {% elsif page.excerpt %}
     <meta name="description" content="{{ page.excerpt | strip_html | replace: '"', '&quot;' }}" />
-    <meta property="og:description" content="{{ page.excerpt | strip_html | replace: '"', '&quot;' }}" />
-    <meta name="twitter:description" content="{{ page.excerpt | strip_html | replace: '"', '&quot;' }}" />
+    <meta property="og:description" name="twitter:description" content="{{ page.excerpt | strip_html | replace: '"', '&quot;' }}" />
     {% else %}
     <meta name="description" content="{{ site.description  | replace: '"', '&quot;' }}">
-    <meta property="og:description" content="{{ site.description  | replace: '"', '&quot;' }}" />
-    <meta name="twitter:description" content="{{ site.description | replace: '"', '&quot;' }}" />
+    <meta property="og:description" name="twitter:description" content="{{ site.description  | replace: '"', '&quot;' }}" />
     {% endif %}
 
     <!-- Image -->
     {% if page.image %}
     {% if page.image contains "http" %}
-    <meta name="twitter:image" content="{{ page.image }}" />
-    <meta property="og:image" content="{{ page.image }}" />
+    <meta property="og:image" name="twitter:image" content="{{ page.image }}" />
     {% else %}
-    <meta name="twitter:image" content="{{ page.image | absolute_url }}" />
-    <meta property="og:image" content="{{ page.image | absolute_url}}" />
+    <meta property="og:image" name="twitter:image" content="{{ page.image | absolute_url }}" />
     {% endif %}
     {% else %}
-    <meta name="twitter:image" content="{{ site.url }}/tile-wide.png" />
-    <meta property="og:image" content="{{ site.url }}/tile-wide.png" />
+    <meta property="og:image" name="twitter:image" content="{{ site.url }}/tile-wide.png" />
     <meta property="og:image:width" content="558" />
     <meta property="og:image:height" content="270" />
     {% endif %}
