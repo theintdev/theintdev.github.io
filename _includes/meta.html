@@ -9,23 +9,18 @@
     <meta name="twitter:card" content="summary" />
     <meta property="og:site_name" content="{{ site.title }}" />
     <meta property="og:type" content="website" />
-    
+
     <meta property="og:url" name="twitter:url" content="{{ page.url | absolute_url }}" />
 
     <!-- Title -->
     {% if page.meta_title %}
     <title>{{ page.meta_title }} | {{ site.title }}</title>
+    <meta property="og:title" name="twitter:title" content="{{ page.meta_title | replace: '"', '&quot;' }} | {{ site.title }}" />
     {% elsif page.title %}
     <title>{{ page.title }} | {{ site.title }}</title>
+    <meta property="og:title" name="twitter:title" content="{{ page.title | replace: '"', '&quot;' }} | {{ site.title }}" />
     {% else %}
     <title>{{ site.title }} – {{ site.description }}</title>
-    {% endif %}
-
-    {% if page.meta_title %}
-    <meta property="og:title" name="twitter:title" content="{{ page.meta_title | replace: '"', '&quot;' }}" />
-    {% elsif page.title %}
-    <meta property="og:title" name="twitter:title" content="{{ page.title | replace: '"', '&quot;' }}" />
-    {% else %}
     <meta property="og:title" name="twitter:title" content="{{ site.title }} – {{ site.description }}" />
     {% endif %}
 
