@@ -24,6 +24,9 @@
     {% elsif page.title %}
     <meta property="og:title" content="{{ page.title | replace: '"', '&quot;' }}" />
     <meta name="twitter:title" content="{{ page.title | replace: '"', '&quot;' }}" />
+    {% else %}
+    <meta property="og:title" content="{{ site.title }} – {{ site.description }}" />
+    <meta name="twitter:title" content="{{ site.title }} – {{ site.description }}" />
     {% endif %}
 
     <!-- Description -->
