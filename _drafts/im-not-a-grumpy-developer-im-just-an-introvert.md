@@ -1,0 +1,54 @@
+---
+layout: post
+title: I'm not a grumpy developer, I'm just an introvert
+image: /media/grumpy-developer/masthead.jpg
+author: matt_brailsford
+---
+
+From pretty early on in my career, I quite quickly got pinned with the “grumpy developer” label. It’s a pretty common label in the developer community, and I know some developers that are happy to play that part. For me though I never really liked it, as it just made me into a stereotype of something I didn’t want to be. Thankfully today I’ve (mostly) put that label behind me, but having recently started my journey of introversion discovery I’ve come to realize that it wasn’t that I was a “grumpy developer”, it’s just that I am an [introvert](https://introvertspring.com/what-is-an-introvert/).
+
+My first professional job was for a large design agency called Attik, an award winning and cutting edge graphic design company with offices all over the world, and Huddersfield, which is where I worked. The company was based in a converted terrace house with each room from basement to attic full of staff members, from receptionist to copywriters, to developers and designs, account handlers and project managers, all with an open door policy. It was a pretty cosy affair and was a constant hive of activity.
+
+Coming fresh out of University, the work environment was a pretty big culture shock for me. At University we learnt the skills that would make companies want to hire us, but we learnt nothing of how to survive in a real corporate environment. An environment full of passionate, hungry and extroverted individuals, all trying to stand out and make a name for themselves. 
+
+So when I, a rookie introvert junior developer joined the team, my natural reaction to the agency culture was to just try and play along. Unfortunately, this really wasn’t a good fit to my introverted temperament and so for me frustration, anger and all round grumpiness ensued.
+
+> ...at that time in my life I just wasn’t equipped with the strategies or personal understanding to handle such an environment
+
+It was a lot to take for someone who had not experienced this before. The shallow water cooler chatter, the constant interruptions breaking your focus, meeting after meeting with no idea what they were about before hand, and forever being put on the spot with questions needing immediate answers. There was just no escape. Your toilet breaks would get longer and longer and you’d pray it was your turn to do the coffee run down to the kitchen just so you could get away from it all for just a moment. It was totally overwhelming and at that time in my life I just wasn’t equipped with the strategies or personal understanding to handle such an environment.
+
+Over time and several other jobs and positions, I like to think that I’ve learnt a thing or two on how to keep the “grumpy developer” in me under control (though he does still rear his head every now and again in stressful situations). However, it wasn’t until I started to learn more about introversion that I realized these strategies were actually about looking after my introverted self. 
+
+What follows are a few core strategies, from both an introvert’s and an agency's perspective, that I wish I’d known when I started out. Some I’ve followed for years, and some are still pretty new to me, but my hope is that at least some of them will help you to get a grip on your “grumpy developer” and help you grow in whatever field you are in.
+
+## For the introverts
+
+* Take regular breaks. As computer users, it’s already recommended that we [take regular breaks](http://www.hse.gov.uk/contact/faqs/vdubreaks.htm) every hour or so, but as introverts it is even more important to create those little moments in the day. Agency life can be pretty full on and it’s easy to get sucked into the mindset that you should be working above and beyond, especially when you are newbie trying to prove yourself, but taking regular breaks away from your computer and the office hustle and bustle can help regulate your energy levels across the day rather than burning through them by early afternoon and struggling your way through the rest of the day.
+
+* Wear headphones while you work. With more and more offices becoming open plan it’s getting harder and harder to drown out the general office buzz. If your office allows, consider wearing headphones to help. Studies have shown that [wearing headphones and listening to music can in fact help you focus and be more productive](http://graphics8.nytimes.com/packages/pdf/business/LESIUKarticle2005.pdf). If you still find it hard to focus whilst listening to music, then you could try some noise canceling headphones instead to create more peace and quiet while you work.
+
+* Don’t be afraid to ask for a moment to think about something. In a high energy work environment it seems like every communication is an urgent one, but I’ve often found this to be just my own perception. If someone is putting you on the spot asking can something be done, or can it be fixed, you can feel like you need to answer there an then. What usually happens for me in that scenario, is instant panic and a knee jerk reaction of saying no, but then it’s usually followed by a sentence starting “well, actually, maybe if we…” and I spend the next five minutes talking my way through different avenues, back tracking and changing direction whilst the person asking the question stands there with a glazed look on their face, not entirely following along. Nowadays when someone asks me a question I’m unsure of I’ll ask if I can have 5 or 10 minutes to think about it and get back to them. That way I can think through the problem thoroughly in my own head and then present a more succinct solution in one easy to understand sound bite, or preferably, email.
+
+* If you’ve been invited to a meeting, spend a few minutes preparing for it even if everyone else is just winging it. Read the agenda, or ask the organiser what it’s about if there isn’t one and plan a few things you’d like to put across. In the meeting, try to get your points out early as being an introvert, it can be hard to keep up with fast paced meetings and know where to interject with your points. If you do leave the meeting with thoughts you wish you’d expressed, be sure to follow up with an email to put your extra points across. If anyone asks why you didn’t raise them in the meeting, just tell them you needed time to think.
+
+
+* I know it’s hard, and I for one have never been good at this, but do invest some time in learning how to do at least a little small talk. Even just spending the time in the morning to say good morning to everyone in the office can go a long way to dispelling that “grumpy developer” label. One thing that works for me is to think of encounters as fact finding missions, asking questions of what people are into and making mental notes to ask about that next time you bump into them. If they go rock climbing, “so, climbed any good mountains recently?” or if they enjoy running, “so, have you applied for that marathon yet?”, treat it as a game and you can even grow to enjoy it. And if you start to get out of your depth, just have some escape phrases ready to pull out at any time “I’m really sorry, I must get back to work, I have a tight deadline, it was nice chatting with you”.
+
+## For the agencies  
+
+* Create uninterruptible time throughout the day for developers to focus. I’m not sure if there is an official name for it, but I’ve always known it as “Golden Hours”. Periods of the day are blocked out for focused development time, during which the developers can’t be interrupted and no questions can be asked of them. All emails and apps that can cause distraction are closed down and devs have time to really focus on the task at hand. These are usually in 2 hour stints with “open” time either side where people can ask them what they need, so the theory is, you are never more than 2 hours away from getting the answer you need and what problem can’t wait 2 hours for an answer. 
+ 
+* If a meeting is really necessary, make sure to create an agenda in advance. If a meeting isn’t needed then just don’t do it. It’s a pretty common [meme](https://i.redd.it/zr8if3gdtafz.png) in the industry and one that has been [backed up by studies](https://link.springer.com/article/10.1007/s11219-010-9104-9), that those quick meetings have far reaching effects beyond the actual meeting length itself. If you absolutely must hold a meeting though, be sure to set out what you expect to cover in the meeting and why each person is there. This gives people time to plan ahead and be prepared for any questions that might come their way. 
+
+
+* If possible, consider creating a quiet zone in your office. There is a growing culture in design agencies of creating games rooms with games consoles and foosball tables as places for people to take a break and relax, however these are often loud and busy places unsuitable for introverts to recharge. If you have space, consider creating a quiet zone where no noise is allowed where people who seek solitude can go to recharge.
+
+
+* Avoid micromanagement. This probably goes back to the interruption thing again to some degree, but introverts work best when they have a task to really dive into and focus on completely. By constantly asking for updates or just “checking in” you are breaking that focus and also distilling a lack of trust on the individual. If you want to stay up to date with a project, create a timeplan where things will get discussed such as a standup meeting every morning where people can say what happened yesterday, what they plan to do today and any problems they need help with. This way you stay up to date with the project and the developers have a consistent way of feeding back that’s not too intrusive to their productivity.
+
+
+* Invest time to get to know your employees needs, be that introverted or extroverted. Diversity is key to being able to build great solutions and introversion and extroversion are no exceptions. Having a mixed team of introverts and extroverts can be a real asset to your company, but you need to make sure you are nurturing both, sets of people . Ask what you team members need (ideally one to one) and ensure you are taking steps to create a comfortable working environment for all.
+
+Have you been labeled as a "grumpy developer" in the past? What have your strategies been to help shed that title? Lets us know in the comments below.
+
+Photo by [Andre Hunter](https://unsplash.com/photos/5otlbgWJlLs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
