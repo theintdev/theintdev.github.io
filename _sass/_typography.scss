@@ -17,7 +17,7 @@ h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6,p
     margin: 0 0 $global-spacing-unit-small;    
 }
 
-h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6, blockquote p
 {
     font-family: 'Dosis', monospace;
     color: $text-color;
@@ -112,5 +112,27 @@ hr
             margin-top: $global-spacing-unit-large;
             margin-bottom: $global-spacing-unit-large;
         }
+    }
+}
+
+blockquote {
+    background-color: $brand-color-grey;
+    border-left: solid 2px $border-color;
+    margin: $global-spacing-unit-small 0;
+    padding: $global-spacing-unit-small;
+    font-style: italic;
+
+    p {
+        @include font-size(20px, 26px); 
+    }
+
+    > *:first-child {
+        &:before {
+            content: "\0022 ";
+        }
+    }
+
+    > *:last-child {
+        margin: 0;
     }
 }

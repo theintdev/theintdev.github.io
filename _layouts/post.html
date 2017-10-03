@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+{% if page.author %}
+{% assign author = site.data.authors[page.author] %}
+{% else %}
+{% assign author = site.author %}
+{% endif %}
 
 <article class="post">
     {% if page.image %}
@@ -11,10 +16,12 @@ layout: default
     <div class="post__content">
         <div class="post__meta">
             {{ page.date | date: "%b.%d.%Y" }} 
-            {% if page.author.name %}
-            / {{ page.author.name }}
-            {% elsif page.author.twitter %}
-            / @{{ page.author.twitter }}
+            {% if author %}
+                {% if author.name %}
+                / {{ author.name }}
+                {% elsif author.twitter %}
+                / @{{ author.twitter }}
+                {% endif %}
             {% endif %}
         </div>
         <h1 class="post__heading h2">{{ page.title }}</h1>
@@ -26,10 +33,8 @@ layout: default
             <div class="col-xs-12 col-md-4 col-lg-3 col-lg-offset-1">
                 <div class="sticky">
                     <hr class="visible-on-mobile" />
-                    {% if page.author %}
-                        {% include author.html author=page.author %} 
-                    {% elsif site.author %}
-                        {% include author.html author=site.author %}
+                    {% if author %}
+                        {% include author.html author=author %} 
                     {% endif %}
                     <h4>Share</h4>
                     {% include share.html %}

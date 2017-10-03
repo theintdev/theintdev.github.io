@@ -2,13 +2,7 @@
 layout: post
 title: Hello World
 image: /media/hello-world/masthead2.jpg
-
-author:
-  name: Matt Brailsford
-  avatar: https://avatars1.githubusercontent.com/u/527305?s=200
-  twitter: mattbrailsford
-  url: https://twitter.com/mattbrailsford
-  bio: Matt is a web developer from the Umbraco community and has recently started his journey of introversion discovery.
+author: matt_brailsford
 ---
 
 As this blog is for the developer community, it seemed to make sense to start with a **hello world** :)
