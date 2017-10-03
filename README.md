@@ -41,19 +41,12 @@ When creating a pull request, please follow this process:
     layout: post
     title: <article-title>
     image: <article-image>
-
-    author:
-        name: <your-name>
-        avatar: <your-avatar>
-        twitter: <your-twitter-handle>
-        url: <your-url>
-        bio: <your-bio>
     ---
 
     Your markdown content goes here
    ```
 
-   **NB** Only the title, image and author name front matter are required
+   **NB** Only the title front matter are required
 
 5. Add any media assets used by your article into an article specific sub folder inside the root `media` folder. Images    should be no greater then 1000px in any given dimension.
 
