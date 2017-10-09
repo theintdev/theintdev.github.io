@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hello World
-image: /media/hello-world/masthead2.jpg
+image: /media/hello-world/masthead.jpg
 author: matt_brailsford
 ---
 

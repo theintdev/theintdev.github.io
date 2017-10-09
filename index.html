@@ -36,7 +36,7 @@ layout: default
 		{% for post in paginator.posts %}
 		<article class="col-xs-12 col-sm-6 col-lg-4 post-summary">
 			{% if post.image %}
-			<a href="{{ site.baseurl }}{{ post.url }}" class="ratio--16x9 post__thumb zoom-hover" style="background-image: url({{ post.image }});">
+			<a href="{{ site.baseurl }}{{ post.url }}" class="ratio--16x9 post__thumb zoom-hover" style="background-image: url({{ post.image | replace:'.jpg', '_sml.jpg'  | replace:'.png', '_sml.png' }});">
 				<div class="ratio__content post__thumb-overlay"></div>
 			</a>
 			{% endif %}
