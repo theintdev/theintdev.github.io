@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Developers Writing the Anxiety
+title: Developers Writing with Anxiety
 image: /media/devs-writing-with-anxiety/masthead.jpg
 author: karltynan
 ---
